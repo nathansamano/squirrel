@@ -1,3 +1,9 @@
+/* Edited by Nathan Samano
+ * CMP237
+ * Squirrelness
+ * 1/30/15
+ */
+
 // Code to universalize interpreter
 if (typeof(process) == "object") {
   var print = function(args) {
@@ -44,5 +50,12 @@ function phi(table) {
               (table[0] + table[2]));
 }
 
-print(tableFor("touched tree", JOURNAL));
+print("\n[No event/No squirrel, Event/No squirrel, No event/Squirrel, Event/Squirrel]\n");
+print("touched tree\n" + tableFor("touched tree", JOURNAL));
 print(phi(tableFor("touched tree",JOURNAL)));
+
+/* 1/30/15 Assignement */
+print("\nbrushed teeth\n" + tableFor("brushed teeth", JOURNAL));
+print(phi(tableFor("brushed teeth", JOURNAL)));
+print("\nweekend\n" + tableFor("weekend", JOURNAL));
+print(phi(tableFor("weekend", JOURNAL)) + "\n");
